@@ -7,11 +7,10 @@ import (
 	"os"
 )
 
-var beers = map[string]string{
-	"weff44g2f323f23f23f32f2332f3f": "Mack Jack",
-	"weff44g2f323f2qwdqvqfq3fwewee": "Keyston",
-	"qffqqwfqw23f23f32f2332f3fq34g": "Filler flip",
-}
+var stores = map[string]string{
+	"01DC9ZAPGKEQJS4P4A48EG3P43": "Mercadona",
+	"01DC9ZB23EW0J0ARAER09SJDKC": "Carrefour",
+	"01DC9ZB89V1PQD977ZE6QXSQHH": "Alcampo"}
 
 func main() {
 	beersCmd := flag.NewFlagSet("beers", flag.ExitOnError)
@@ -27,9 +26,9 @@ func main() {
 		beersCmd.Parse(os.Args[2:])
 
 		if *ID != "" {
-			fmt.Println(beers[*ID])
+			fmt.Println(stores[*ID])
 		} else {
-			fmt.Println(beers)
+			fmt.Println(stores)
 		}
 	}
 
