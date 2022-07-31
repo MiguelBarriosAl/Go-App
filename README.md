@@ -65,17 +65,14 @@ During the installation of Go we have defined where our $GOPATH will be located,
     ~/go
 
 But we can change it to wherever we want by changing the $GOPATH environment variable.
+Similar to how Python looks for imported libraries in the Python path, Go searches the GOPATH for the same. A notable difference between Python and Go paths is that Go expects all your Go projects to live within the GOPATH, specifically /go/src. Contrast this with Python where projects can live anywhere.
+
+The GOPATH directory is made up of 3 subdirectories:
+
+![](/images/2022-07-31-22-08-19.png)
 
 ## Flags
 The flag package offers us different types of parses. Note that when we read these options in our console based on the flag package, they will be returned as pointers.
-https://blog.friendsofgo.tech/posts/crear-tu-primer-cli-en-go/
-
-
-## Sources:
-- https://pro.codely.com/library/introduccion-a-go-tu-primera-app-43842/89042/about/
-- https://blog.friendsofgo.tech/
-- https://forum.golangbridge.org/
-- https://github.com/golang/go/wiki
 
 ## Data
 - **SLICE**
@@ -115,5 +112,20 @@ https://blog.friendsofgo.tech/posts/crear-tu-primer-cli-en-go/
 
     They are data structures formed by lists of attributes characterized by a name and a type. The way to declare a struct is by using the struct keyword with its definition following between braces ({ }). It is important to remember that the case-sensitive rule also applies here to determine whether the attributes are public or private.
     https://go.dev/play/p/V32fuTZXbYD
+
+
+
+
+
+
+
+    
+
+## Sources:
+- https://pro.codely.com/library/introduccion-a-go-tu-primera-app-43842/89042/about/
+- https://blog.friendsofgo.tech/
+- https://forum.golangbridge.org/
+- https://github.com/golang/go/wiki
+- https://hackersandslackers.com/create-your-first-golang-app/
     
 
