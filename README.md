@@ -1,4 +1,4 @@
-![](images\go-logo.PNG)
+![](/images/gologo.png)
 
 # **Introducing Goland**
 
