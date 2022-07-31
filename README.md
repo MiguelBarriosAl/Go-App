@@ -10,6 +10,8 @@ Welcome to the Go wiki, my collection of information about the [Go Programming L
 - [#GOPATH](#gopath)
 - [Flags](#flags)
 - [Sources](#sources)
+- [Data](#data)
+
 
 ## Packages
 
@@ -49,9 +51,8 @@ The different ways to import packages are:
 
     A la hora de escribir código condicional, tenemos algunas de las opciones habituales en la mayoría de lenguajes de programación:
 
-    - IF...ELSE
-
-    - SWITCH:
+    - IF/ELSE
+    - SWITCH
 
         Keyword `switch` and then define all possible cases with `case`. Each of the cases is usually isolated by the reserved word `break`. However, this behavior is already predefined by default in Go. So, we will only explicitly indicate when we want to concatenate two `case` by using the `fallthrough` keyword, as follows:
         https://go.dev/play/p/PXWJuVlZ9sp
@@ -75,4 +76,44 @@ https://blog.friendsofgo.tech/posts/crear-tu-primer-cli-en-go/
 - https://blog.friendsofgo.tech/
 - https://forum.golangbridge.org/
 - https://github.com/golang/go/wiki
+
+## Data
+- **SLICE**
+
+    Is a representation above an array
+    This representation is contained in the following information:
+
+    - Pointer to the first element of the underlying array.
+    - Slice length
+    - Slice capacity
+
+            func main(){
+                beers := make([]string, 3)
+                fm.Println("empty slice:", beers)
+                beers[0] = "estrella"
+                beers[1] = "buckler"
+                beers[2] = "mahou"
+                fmt.Println("beers:", beers)
+            }
+
+        https://go.dev/play/p/tZ_gd59MKu4
+
+- **MAPS**
+
+   Key-value structure which, in Go, are implemented by means of a HashMap.
+
+        func main(){
+            b := make(map[string]float32)
+            b["mahou"] = 0.59
+            b["buckler] = 0,60
+            fmt.Println("beers", b)
+        }
+
+    https://go.dev/play/p/6AtqM9utZne
+
+- **STRUCTS**
+
+    They are data structures formed by lists of attributes characterized by a name and a type. The way to declare a struct is by using the struct keyword with its definition following between braces ({ }). It is important to remember that the case-sensitive rule also applies here to determine whether the attributes are public or private.
+    https://go.dev/play/p/V32fuTZXbYD
+    
 
