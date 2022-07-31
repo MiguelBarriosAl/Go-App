@@ -10,7 +10,7 @@ Welcome to the Go wiki, my collection of information about the [Go Programming L
 - [Flags](#flags)
 - [Sources](#sources)
 
-# Packages
+## Packages
 
 A set of Go (.go) files headed by the 'package package-name' statement and residing in the same directory.
 When importing other packages, we can do it in several ways, all of them using the `import` keyword, either in its individual version or in its bulk version:
@@ -24,7 +24,7 @@ The different ways to import packages are:
 - Underscore imports (to import packages that are not explicitly referenced).
 - Aliases (to rename the imported package, e.g. in case of name collision).
 
-# Basic nomenclatures
+## Basic nomenclatures
 - VARIABLE
     - The short format (using `:=`)
     - The long format (using `var`)
@@ -56,7 +56,7 @@ The different ways to import packages are:
         https://go.dev/play/p/PXWJuVlZ9sp
 
 
-# $GOPATH
+## $GOPATH
 
 During the installation of Go we have defined where our $GOPATH will be located, the $GOPATH is nothing more than the path where our workspace will be located, normally it is usually found in:
 
@@ -64,12 +64,12 @@ During the installation of Go we have defined where our $GOPATH will be located,
 
 But we can change it to wherever we want by changing the $GOPATH environment variable.
 
-# Flags
+## Flags
 The flag package offers us different types of parses. Note that when we read these options in our console based on the flag package, they will be returned as pointers.
 https://blog.friendsofgo.tech/posts/crear-tu-primer-cli-en-go/
 
 
-# Sources:
+## Sources:
 - https://pro.codely.com/library/introduccion-a-go-tu-primera-app-43842/89042/about/
 - https://blog.friendsofgo.tech/
 - https://forum.golangbridge.org/
