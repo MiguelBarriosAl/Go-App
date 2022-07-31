@@ -1,4 +1,4 @@
-![](2022-07-31-12-37-57.png)
+![](images\go-logo.PNG)
 # **Introducing Goland**
 
 Welcome to the Go wiki, my collection of information about the [Go Programming Language](https://go.dev/). [Awesome Go](http://awesome-go.com/). The purpose of this repository is to acquire and collect the basic knowledge to create a Go application.
