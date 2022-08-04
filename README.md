@@ -113,9 +113,38 @@ The flag package offers us different types of parses. Note that when we read the
     They are data structures formed by lists of attributes characterized by a name and a type. The way to declare a struct is by using the struct keyword with its definition following between braces ({ }). It is important to remember that the case-sensitive rule also applies here to determine whether the attributes are public or private.
     https://go.dev/play/p/V32fuTZXbYD
 
+- **INTERFACES**
 
+    Keywork: Interfaces
 
+        func send(encrypter interface{ Encrypt([]byte) string }) {
+        // method implementation
+        }
 
+    Function called `send` with a parameter `encrypter`, which is a variable that is an `interface` that has an `Encrypt` method, which receives an array of `bytes` and returns a `string`.
+
+- **DEFINED TYPES**
+
+    The defined types also known as type alias are types created from the definition of other basic or native types of the language (e.g. string, struct, interface, func, channel, etc).
+
+    The way to define a defined type is by using the reserved word type and then the type it represents. This allows us to give semantics to our code
+
+        package main
+
+        import "time"
+
+        type page struct {
+            number int
+            header string
+            text   string
+        }
+
+        type book struct {
+            title       string
+            autor       string
+            releaseDate *time.Time
+            pages       []page
+        }
 
 
 
