@@ -146,10 +146,7 @@ The flag package offers us different types of parses. Note that when we read the
             pages       []page
         }
 
-
-
-    
-
+        
 ## Sources:
 - https://pro.codely.com/library/introduccion-a-go-tu-primera-app-43842/89042/about/
 - https://blog.friendsofgo.tech/
